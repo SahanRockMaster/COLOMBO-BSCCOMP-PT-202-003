@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct COLOMBO_BSCCOMP_PT_202_003App: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
