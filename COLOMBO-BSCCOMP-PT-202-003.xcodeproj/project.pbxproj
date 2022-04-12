@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		F0343F4027FF9039006679B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0343F3F27FF9039006679B0 /* GoogleService-Info.plist */; };
 		F03D889727FDB4AC0062AB61 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03D889627FDB4AC0062AB61 /* Launch Screen.storyboard */; };
-		F03D889F27FDE7EF0062AB61 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F03D889E27FDE7EF0062AB61 /* FirebaseAuth */; };
-		F03D88A127FDE7EF0062AB61 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F03D88A027FDE7EF0062AB61 /* FirebaseDatabase */; };
-		F03D88A327FDE7EF0062AB61 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F03D88A227FDE7EF0062AB61 /* FirebaseFirestore */; };
-		F03D88A527FDE7EF0062AB61 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F03D88A427FDE7EF0062AB61 /* FirebaseStorage */; };
 		F052303B27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052303A27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift */; };
 		F052303D27FCD778003F0AC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052303C27FCD778003F0AC2 /* ContentView.swift */; };
 		F052303F27FCD77A003F0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F052303E27FCD77A003F0AC2 /* Assets.xcassets */; };
@@ -59,10 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F03D88A127FDE7EF0062AB61 /* FirebaseDatabase in Frameworks */,
-				F03D88A527FDE7EF0062AB61 /* FirebaseStorage in Frameworks */,
-				F03D889F27FDE7EF0062AB61 /* FirebaseAuth in Frameworks */,
-				F03D88A327FDE7EF0062AB61 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +150,6 @@
 			);
 			name = "COLOMBO-BSCCOMP-PT-202-003";
 			packageProductDependencies = (
-				F03D889E27FDE7EF0062AB61 /* FirebaseAuth */,
-				F03D88A027FDE7EF0062AB61 /* FirebaseDatabase */,
-				F03D88A227FDE7EF0062AB61 /* FirebaseFirestore */,
-				F03D88A427FDE7EF0062AB61 /* FirebaseStorage */,
 			);
 			productName = "COLOMBO-BSCCOMP-PT-202-003";
 			productReference = F052303727FCD778003F0AC2 /* COLOMBO-BSCCOMP-PT-202-003.app */;
@@ -236,7 +224,6 @@
 			);
 			mainGroup = F052302E27FCD778003F0AC2;
 			packageReferences = (
-				F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F052303827FCD778003F0AC2 /* Products */;
 			projectDirPath = "";
@@ -612,40 +599,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F03D889E27FDE7EF0062AB61 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		F03D88A027FDE7EF0062AB61 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		F03D88A227FDE7EF0062AB61 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		F03D88A427FDE7EF0062AB61 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F03D889D27FDE7EF0062AB61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F052302F27FCD778003F0AC2 /* Project object */;
 }
