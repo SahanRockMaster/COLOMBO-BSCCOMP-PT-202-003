@@ -65,6 +65,8 @@ var body: some View {
                         )
                         .padding(.top, 25)
                         
+
+                        
                         HStack{
                             Spacer()
                             NavigationLink {
@@ -75,12 +77,24 @@ var body: some View {
                                     .foregroundColor(Color.cyan)
                             }
                         }
-                        .padding(.top, 20)
+                        .padding(.trailing,9).padding(.top, 50)
+                        
+                        VStack{
+                            Spacer()
+                            NavigationLink {
+                                TermsAndConditionsView()
+                            } label: {
+                                Text("Terms & Conditions")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.cyan)
+                            }
+                        }.padding(.trailing,166).padding(.top,-42)
+
                         
                         Button {
                             signInVM.verify()
                         } label: {
-                            Text("Sign In")
+                            Text("Agree & Sign In")
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .padding(.vertical)
@@ -88,7 +102,7 @@ var body: some View {
                         }
                         .background(Color.cyan)
                         .cornerRadius(10)
-                        .padding(.top, 25)
+                        .padding(.top, 1)
 
                     }
                     .padding(.horizontal, 25)
@@ -114,11 +128,15 @@ var body: some View {
 
             }
         }
+
+    }
     }
 
- }
+    }
 
-}
+ 
+
+
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
