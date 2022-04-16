@@ -11,6 +11,7 @@ struct SignUpView: View {
     
     @StateObject var signUpVM = SignUpViewModel()
     @Environment(\.presentationMode) var present
+    @State private var presentAlert = true
 
         var body: some View {
             ZStack{
@@ -28,7 +29,7 @@ struct SignUpView: View {
                                     .padding()
                                     .background(
                                         RoundedRectangle(cornerRadius: 4)
-                                            .stroke(self.signUpVM.signup.nic != "" ? Color.orange: Color.black.opacity(0.7), lineWidth: 2)
+                                            .stroke(self.signUpVM.signup.nic != "" ? Color.cyan: Color.cyan.opacity(0.7), lineWidth: 2)
                                     )
                                     .padding(.top, 5)
                                 
@@ -36,7 +37,7 @@ struct SignUpView: View {
                                     .padding()
                                     .background(
                                         RoundedRectangle(cornerRadius: 4)
-                                            .stroke(self.signUpVM.signup.name != "" ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                            .stroke(self.signUpVM.signup.name != "" ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                     )
                                     .padding(.top, 10)
                                 
@@ -44,7 +45,7 @@ struct SignUpView: View {
                                     .padding()
                                     .background(
                                         RoundedRectangle(cornerRadius: 4)
-                                            .stroke(self.signUpVM.signup.dob.formatted(date: .long, time: .omitted) != Date.init().formatted(date: .long, time: .omitted) ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                            .stroke(self.signUpVM.signup.dob.formatted(date: .long, time: .omitted) != Date.init().formatted(date: .long, time: .omitted) ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                     )
                                     .padding(.top, 10)
                                 
@@ -61,7 +62,7 @@ struct SignUpView: View {
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 4)
-                                        .stroke(self.signUpVM.signup.selectedGender != "Male." ? Color.orange:  Color.black.opacity(0.7), lineWidth: 2)
+                                        .stroke(self.signUpVM.signup.selectedGender != "Male." ? Color.cyan:  Color.cyan.opacity(0.7), lineWidth: 2)
                                 )
                                 .padding(.top, 10)
                      
@@ -70,7 +71,7 @@ struct SignUpView: View {
                                     .padding()
                                     .background(
                                         RoundedRectangle(cornerRadius: 4)
-                                            .stroke(self.signUpVM.signup.mobile != "" ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                            .stroke(self.signUpVM.signup.mobile != "" ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                     )
                                     .padding(.top, 10)
                                 
@@ -79,7 +80,7 @@ struct SignUpView: View {
                                     .padding()
                                     .background(
                                         RoundedRectangle(cornerRadius: 4)
-                                            .stroke(self.signUpVM.signup.email != "" ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                            .stroke(self.signUpVM.signup.email != "" ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                     )
                                     .padding(.top, 10)
                                 
@@ -98,14 +99,14 @@ struct SignUpView: View {
                                         self.signUpVM.visible.toggle()
                                     } label: {
                                         Image(systemName: self.signUpVM.visible ? "eye.slash.fill" : "eye.fill")
-                                            .foregroundColor(Color.orange.opacity(0.7))
+                                            .foregroundColor(Color.cyan.opacity(0.7))
                                     }
 
                                 }
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 4)
-                                        .stroke(self.signUpVM.signup.pass != "" ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                        .stroke(self.signUpVM.signup.pass != "" ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                 )
                                 .padding(.top, 10)
                                 
@@ -124,14 +125,14 @@ struct SignUpView: View {
                                         self.signUpVM.revisible.toggle()
                                     } label: {
                                         Image(systemName: self.signUpVM.revisible ? "eye.slash.fill" : "eye.fill")
-                                            .foregroundColor(Color.orange.opacity(0.7))
+                                            .foregroundColor(Color.cyan.opacity(0.7))
                                     }
 
                                 }
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 4)
-                                        .stroke(self.signUpVM.signup.repass != "" ? Color.orange : Color.black.opacity(0.7), lineWidth: 2)
+                                        .stroke(self.signUpVM.signup.repass != "" ? Color.cyan : Color.cyan.opacity(0.7), lineWidth: 2)
                                 )
                                 .padding(.top, 10)
                                 
@@ -144,7 +145,7 @@ struct SignUpView: View {
                                         .padding(.vertical)
                                         .frame(width: UIScreen.main.bounds.width - 50)
                                 }
-                                .background(Color.orange)
+                                .background(Color.cyan)
                                 .cornerRadius(10)
                                 .padding(.top, 20)
 
@@ -159,15 +160,22 @@ struct SignUpView: View {
                         HStack{
                             Image(systemName: "chevron.left")
                                 .font(.system(size: 26, weight: .bold))
-                                .foregroundColor(Color.orange)
+                                .foregroundColor(Color.cyan)
                             Text("Sign In")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.orange)
                         }
                     }
                     .padding()
 
-                })
+                    })
+                
+                if self.signUpVM.message.alert{
+                                    GeometryReader{_ in
+                                        ErrorMessagesView(alert: self.$signUpVM.message.alert, error: self.$signUpVM.message.error, topic: self.$signUpVM.message.topic, loading: self.$signUpVM.message.isLoading, guestUser: $signUpVM.message.guestUser)
+                                    }
+
+
+                                }
+           
             }
         
             .navigationBarHidden(true)

@@ -33,7 +33,7 @@ struct ForgetPassword: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .stroke(self.forgetPassVM.login.email != "" ? Color(.orange) : Color.black.opacity(0.7), lineWidth: 2)
+                                    .stroke(self.forgetPassVM.login.email != "" ? Color(.cyan) : Color.black.opacity(0.7), lineWidth: 2)
                             )
                             .padding(.top, 25)
                         
@@ -45,7 +45,7 @@ struct ForgetPassword: View {
                                 .padding(.vertical)
                                 .frame(width: UIScreen.main.bounds.width - 50)
                         }
-                        .background(Color.orange)
+                        .background(Color.cyan)
                         .cornerRadius(10)
                         .padding(.top, 25)
 
@@ -59,7 +59,7 @@ struct ForgetPassword: View {
                     HStack{
                         Image(systemName: "chevron.left")
                             .font(.system(size: 26, weight: .bold))
-                            .foregroundColor(Color(.orange))
+                            .foregroundColor(Color(.cyan))
                     }
                 }
                 .padding()

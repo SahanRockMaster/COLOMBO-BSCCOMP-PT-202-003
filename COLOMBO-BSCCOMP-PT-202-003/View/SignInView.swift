@@ -20,28 +20,32 @@ var body: some View {
                 ScrollView(.vertical, showsIndicators: false) {
                 
                     VStack{
+                        Image("SignInBG")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3)
                         
 
                         Text("Sign In into your account")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(Color.black.opacity(0.7)).padding(.top, 100)
+                            .foregroundColor(Color.black.opacity(0.7))
                         Spacer()
-                        TextField("Email", text: self.$signInVM.login.email)
+                        TextField("Email", text: self.$signInVM.signing.email)
                             .textInputAutocapitalization(.never)
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .stroke(self.signInVM.login.email != "" ? Color(.orange) : Color.black.opacity(0.7), lineWidth: 2)
+                                    .stroke(self.signInVM.signing.email != "" ? Color(.cyan) : Color.cyan.opacity(0.7), lineWidth: 2)
                             )
                             .padding(.top, 25)
                         HStack(spacing: 15) {
                             VStack{
                                 if self.visible{
-                                    TextField("Password", text: self.$signInVM.login.pass)
+                                    TextField("Password", text: self.$signInVM.signing.pass)
                                         .textInputAutocapitalization(.never)
                                 }else {
-                                    SecureField("Password", text: self.$signInVM.login.pass)
+                                    SecureField("Password", text: self.$signInVM.signing.pass)
                                         .textInputAutocapitalization(.never)
                                 }
                             }
@@ -50,14 +54,14 @@ var body: some View {
                                 self.visible.toggle()
                             } label: {
                                 Image(systemName: self.visible ? "eye.slash.fill" : "eye.fill")
-                                    .foregroundColor(Color.orange.opacity(0.7))
+                                    .foregroundColor(Color.cyan.opacity(0.7))
                             }
 
                         }
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 4)
-                                .stroke(self.signInVM.login.pass != "" ? Color("Color") : Color.black.opacity(0.7), lineWidth: 2)
+                                .stroke(self.signInVM.signing.pass != "" ? Color(.cyan) : Color.cyan.opacity(0.7), lineWidth: 2)
                         )
                         .padding(.top, 25)
                         
@@ -68,7 +72,7 @@ var body: some View {
                             } label: {
                                 Text("Forgot Password")
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color.orange)
+                                    .foregroundColor(Color.cyan)
                             }
                         }
                         .padding(.top, 20)
@@ -82,7 +86,7 @@ var body: some View {
                                 .padding(.vertical)
                                 .frame(width: UIScreen.main.bounds.width - 50)
                         }
-                        .background(Color.orange)
+                        .background(Color.cyan)
                         .cornerRadius(10)
                         .padding(.top, 25)
 
@@ -97,21 +101,24 @@ var body: some View {
             } label: {
                 Text("Sign Up")
                     .fontWeight(.bold)
-                    .foregroundColor(Color.orange)
+                    .foregroundColor(Color.cyan)
             }
             .padding()
 
             
         })
         
+                if self.signInVM.message.alert{
+                    GeometryReader{_ in
+                        ErrorMessagesView(alert: self.$signInVM.message.alert, error: self.$signInVM.message.error, topic: self.$signInVM.message.topic, loading: self.$signInVM.message.isLoading, guestUser: self.$signInVM.message.guestUser)
 
             }
         }
     }
 
-// }
-//
-//}
+ }
+
+}
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
