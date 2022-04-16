@@ -49,6 +49,7 @@ struct ErrorMessagesView: View {
                                         .background(Color.cyan)
                                         .cornerRadius(10)
                                         .padding(.top, 25)
+                                    //    .padding(.top)
                                      
                                      if guestUser{
                                          NavigationLink {

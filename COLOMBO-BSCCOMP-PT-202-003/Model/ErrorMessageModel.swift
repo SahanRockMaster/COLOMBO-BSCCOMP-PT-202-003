@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+//****
 struct ErrorMessageModel {
     var alert : Bool
     var error : String

@@ -24,7 +24,7 @@ struct SingleImage{
     var images : Data
     var imagePicker : Bool
 }
-
+//Post Advertisement
 struct PostAds: Identifiable{
     var id = UUID().uuidString
     var price: Double

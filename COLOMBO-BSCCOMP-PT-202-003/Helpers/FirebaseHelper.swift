@@ -86,7 +86,7 @@ func UploadSingleImage(imageData: Data, path: String,completion: @escaping (Stri
             return
         }
         
-        // Downloading URL and Sending Back..
+        // Downloading URL and Sending Back.....
         storage.child(path).child(uid).child("deedImage_\(ID)").downloadURL { (url, err) in
             if err != nil {
                 completion("")

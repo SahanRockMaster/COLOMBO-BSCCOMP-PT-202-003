@@ -129,7 +129,7 @@ struct AdvertisementView: View {
                                 }
                         }
                         .padding(.top, 10)
-
+                        //.padding(.top)
 
                         TextField("Price", value: self.$advertisementVM.advertisement.price, formatter: advertisementVM.formatter)
                             .keyboardType(.decimalPad)

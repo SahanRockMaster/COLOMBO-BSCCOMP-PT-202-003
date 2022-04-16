@@ -72,7 +72,7 @@ class AdvertisementViewModel: ObservableObject {
         }
     }
     
-    
+    //Validations
     func validation(){
         if self.advertisement.price == 0.0{
             self.message.alert.toggle()
