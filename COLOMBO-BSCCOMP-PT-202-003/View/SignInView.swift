@@ -32,7 +32,7 @@ var body: some View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .stroke(self.signInVM.login.email != "" ? Color("Color") : Color.black.opacity(0.7), lineWidth: 2)
+                                    .stroke(self.signInVM.login.email != "" ? Color(.orange) : Color.black.opacity(0.7), lineWidth: 2)
                             )
                             .padding(.top, 25)
                         HStack(spacing: 15) {
