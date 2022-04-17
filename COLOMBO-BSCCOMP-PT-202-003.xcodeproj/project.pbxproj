@@ -7,8 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F011F13E280961D600378C07 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F011F13D280961D600378C07 /* FirebaseAuth */; };
+		F011F140280961D600378C07 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F011F13F280961D600378C07 /* FirebaseFirestore */; };
+		F011F142280961D600378C07 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F011F141280961D600378C07 /* FirebaseStorage */; };
+		F011F145280962A500378C07 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F011F144280962A500378C07 /* SDWebImageSwiftUI */; };
+		F011F1482809651E00378C07 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F1472809651E00378C07 /* SignInModel.swift */; };
+		F011F14A2809689200378C07 /* ErrorMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F1492809689200378C07 /* ErrorMessagesView.swift */; };
+		F011F14C280969CD00378C07 /* ErrorMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F14B280969CD00378C07 /* ErrorMessageModel.swift */; };
+		F011F14E28096E6600378C07 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F14D28096E6600378C07 /* SignUpView.swift */; };
+		F011F15028096ECC00378C07 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F14F28096ECC00378C07 /* SignUpViewModel.swift */; };
+		F011F152280973FE00378C07 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F151280973FE00378C07 /* SignUpModel.swift */; };
+		F011F1542809767500378C07 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F1532809767500378C07 /* ForgetPasswordView.swift */; };
+		F011F156280976B600378C07 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F155280976B600378C07 /* ForgetPasswordViewModel.swift */; };
+		F011F15B280985DA00378C07 /* AdvertisementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F15A280985DA00378C07 /* AdvertisementDetailView.swift */; };
+		F011F15D2809862400378C07 /* AdvertisementItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F15C2809862400378C07 /* AdvertisementItemView.swift */; };
+		F011F15F2809869600378C07 /* AdvertisementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F15E2809869600378C07 /* AdvertisementView.swift */; };
+		F011F161280986D200378C07 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F160280986D200378C07 /* CustomPicker.swift */; };
+		F011F163280986FE00378C07 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F162280986FE00378C07 /* ImageCardView.swift */; };
+		F011F1652809871D00378C07 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F1642809871D00378C07 /* ImagePicker.swift */; };
+		F011F1672809877000378C07 /* AdvertisementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F1662809877000378C07 /* AdvertisementViewModel.swift */; };
+		F011F169280987B700378C07 /* AdvertisementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F168280987B700378C07 /* AdvertisementModel.swift */; };
+		F011F16B2809891300378C07 /* CustomPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F16A2809891300378C07 /* CustomPickerViewModel.swift */; };
+		F011F16D2809896300378C07 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F16C2809896300378C07 /* HomeViewModel.swift */; };
+		F011F16F2809898600378C07 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F16E2809898600378C07 /* SettingViewModel.swift */; };
+		F011F171280989C700378C07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F170280989C700378C07 /* HomeView.swift */; };
+		F011F173280989FC00378C07 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F172280989FC00378C07 /* SettingView.swift */; };
+		F011F17728098A8500378C07 /* PickerImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F17628098A8500378C07 /* PickerImageModel.swift */; };
+		F011F17A28098AF500378C07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F17928098AF500378C07 /* Extensions.swift */; };
+		F011F17C28098B1D00378C07 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F17B28098B1D00378C07 /* FirebaseHelper.swift */; };
+		F011F17E28098B3E00378C07 /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F17D28098B3E00378C07 /* LocationManagerHelper.swift */; };
+		F011F18028098CB300378C07 /* ForgetPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F17F28098CB300378C07 /* ForgetPasswordModel.swift */; };
 		F0343F4027FF9039006679B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0343F3F27FF9039006679B0 /* GoogleService-Info.plist */; };
 		F03D889727FDB4AC0062AB61 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03D889627FDB4AC0062AB61 /* Launch Screen.storyboard */; };
+		F04126EB280B344B004976AE /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04126EA280B344B004976AE /* TermsAndConditionsView.swift */; };
 		F052303B27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052303A27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift */; };
 		F052303D27FCD778003F0AC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052303C27FCD778003F0AC2 /* ContentView.swift */; };
 		F052303F27FCD77A003F0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F052303E27FCD77A003F0AC2 /* Assets.xcassets */; };
@@ -19,6 +50,8 @@
 		F06A86E22808D44900723465 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A86E12808D44900723465 /* SignInView.swift */; };
 		F06A86E32808D44900723465 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A86E12808D44900723465 /* SignInView.swift */; };
 		F06A86E42808D44900723465 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A86E12808D44900723465 /* SignInView.swift */; };
+		F09EC55F280C81A100618BB0 /* SignInViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EC55E280C81A100618BB0 /* SignInViewUITest.swift */; };
+		F0AFA31028095B7A004FB60C /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AFA30F28095B7A004FB60C /* SignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +72,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F011F1472809651E00378C07 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		F011F1492809689200378C07 /* ErrorMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessagesView.swift; sourceTree = "<group>"; };
+		F011F14B280969CD00378C07 /* ErrorMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageModel.swift; sourceTree = "<group>"; };
+		F011F14D28096E6600378C07 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F011F14F28096ECC00378C07 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F011F151280973FE00378C07 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		F011F1532809767500378C07 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		F011F155280976B600378C07 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		F011F15A280985DA00378C07 /* AdvertisementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementDetailView.swift; sourceTree = "<group>"; };
+		F011F15C2809862400378C07 /* AdvertisementItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementItemView.swift; sourceTree = "<group>"; };
+		F011F15E2809869600378C07 /* AdvertisementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementView.swift; sourceTree = "<group>"; };
+		F011F160280986D200378C07 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
+		F011F162280986FE00378C07 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		F011F1642809871D00378C07 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F011F1662809877000378C07 /* AdvertisementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementViewModel.swift; sourceTree = "<group>"; };
+		F011F168280987B700378C07 /* AdvertisementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementModel.swift; sourceTree = "<group>"; };
+		F011F16A2809891300378C07 /* CustomPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewModel.swift; sourceTree = "<group>"; };
+		F011F16C2809896300378C07 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F011F16E2809898600378C07 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		F011F170280989C700378C07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F011F172280989FC00378C07 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F011F17628098A8500378C07 /* PickerImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerImageModel.swift; sourceTree = "<group>"; };
+		F011F17928098AF500378C07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F011F17B28098B1D00378C07 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		F011F17D28098B3E00378C07 /* LocationManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
+		F011F17F28098CB300378C07 /* ForgetPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordModel.swift; sourceTree = "<group>"; };
+		F01CED3A280998DA000A5CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F0343F3F27FF9039006679B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F03D889627FDB4AC0062AB61 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F04126EA280B344B004976AE /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 		F052303727FCD778003F0AC2 /* NIBM Broker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM Broker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F052303A27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_003App.swift; sourceTree = "<group>"; };
 		F052303C27FCD778003F0AC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +113,8 @@
 		F052305527FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_003UITests.swift; sourceTree = "<group>"; };
 		F052305727FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COLOMBO_BSCCOMP_PT_202_003UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F06A86E12808D44900723465 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F09EC55E280C81A100618BB0 /* SignInViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewUITest.swift; sourceTree = "<group>"; };
+		F0AFA30F28095B7A004FB60C /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +122,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F011F145280962A500378C07 /* SDWebImageSwiftUI in Frameworks */,
+				F011F13E280961D600378C07 /* FirebaseAuth in Frameworks */,
+				F011F140280961D600378C07 /* FirebaseFirestore in Frameworks */,
+				F011F142280961D600378C07 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +146,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F011F1462809645B00378C07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F011F1472809651E00378C07 /* SignInModel.swift */,
+				F011F14B280969CD00378C07 /* ErrorMessageModel.swift */,
+				F011F151280973FE00378C07 /* SignUpModel.swift */,
+				F011F168280987B700378C07 /* AdvertisementModel.swift */,
+				F011F17628098A8500378C07 /* PickerImageModel.swift */,
+				F011F17F28098CB300378C07 /* ForgetPasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F011F1592809859100378C07 /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				F011F15A280985DA00378C07 /* AdvertisementDetailView.swift */,
+				F011F15C2809862400378C07 /* AdvertisementItemView.swift */,
+				F011F15E2809869600378C07 /* AdvertisementView.swift */,
+				F011F160280986D200378C07 /* CustomPicker.swift */,
+				F011F162280986FE00378C07 /* ImageCardView.swift */,
+				F011F1642809871D00378C07 /* ImagePicker.swift */,
+			);
+			path = Advertisement;
+			sourceTree = "<group>";
+		};
+		F011F17828098AAD00378C07 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F011F17928098AF500378C07 /* Extensions.swift */,
+				F011F17B28098B1D00378C07 /* FirebaseHelper.swift */,
+				F011F17D28098B3E00378C07 /* LocationManagerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F052302E27FCD778003F0AC2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +205,10 @@
 		F052303927FCD778003F0AC2 /* COLOMBO-BSCCOMP-PT-202-003 */ = {
 			isa = PBXGroup;
 			children = (
+				F01CED3A280998DA000A5CAD /* Info.plist */,
+				F011F17828098AAD00378C07 /* Helpers */,
+				F011F1462809645B00378C07 /* Model */,
+				F0AFA30C28095B03004FB60C /* ViewModel */,
 				F06A86DC2808D3F500723465 /* View */,
 				F052303A27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift */,
 				F052303C27FCD778003F0AC2 /* ContentView.swift */,
@@ -134,6 +241,7 @@
 			children = (
 				F052305527FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITests.swift */,
 				F052305727FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITestsLaunchTests.swift */,
+				F09EC55E280C81A100618BB0 /* SignInViewUITest.swift */,
 			);
 			path = "COLOMBO-BSCCOMP-PT-202-003UITests";
 			sourceTree = "<group>";
@@ -141,9 +249,30 @@
 		F06A86DC2808D3F500723465 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F011F1592809859100378C07 /* Advertisement */,
 				F06A86E12808D44900723465 /* SignInView.swift */,
+				F011F1492809689200378C07 /* ErrorMessagesView.swift */,
+				F011F14D28096E6600378C07 /* SignUpView.swift */,
+				F011F1532809767500378C07 /* ForgetPasswordView.swift */,
+				F011F170280989C700378C07 /* HomeView.swift */,
+				F011F172280989FC00378C07 /* SettingView.swift */,
+				F04126EA280B344B004976AE /* TermsAndConditionsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F0AFA30C28095B03004FB60C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0AFA30F28095B7A004FB60C /* SignInViewModel.swift */,
+				F011F14F28096ECC00378C07 /* SignUpViewModel.swift */,
+				F011F155280976B600378C07 /* ForgetPasswordViewModel.swift */,
+				F011F1662809877000378C07 /* AdvertisementViewModel.swift */,
+				F011F16A2809891300378C07 /* CustomPickerViewModel.swift */,
+				F011F16C2809896300378C07 /* HomeViewModel.swift */,
+				F011F16E2809898600378C07 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +292,10 @@
 			);
 			name = "COLOMBO-BSCCOMP-PT-202-003";
 			packageProductDependencies = (
+				F011F13D280961D600378C07 /* FirebaseAuth */,
+				F011F13F280961D600378C07 /* FirebaseFirestore */,
+				F011F141280961D600378C07 /* FirebaseStorage */,
+				F011F144280962A500378C07 /* SDWebImageSwiftUI */,
 			);
 			productName = "COLOMBO-BSCCOMP-PT-202-003";
 			productReference = F052303727FCD778003F0AC2 /* NIBM Broker.app */;
@@ -237,6 +370,8 @@
 			);
 			mainGroup = F052302E27FCD778003F0AC2;
 			packageReferences = (
+				F011F13C280961D600378C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F011F143280962A500378C07 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = F052303827FCD778003F0AC2 /* Products */;
 			projectDirPath = "";
@@ -282,9 +417,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0AFA31028095B7A004FB60C /* SignInViewModel.swift in Sources */,
+				F011F15D2809862400378C07 /* AdvertisementItemView.swift in Sources */,
+				F011F169280987B700378C07 /* AdvertisementModel.swift in Sources */,
+				F011F171280989C700378C07 /* HomeView.swift in Sources */,
+				F011F17C28098B1D00378C07 /* FirebaseHelper.swift in Sources */,
+				F011F161280986D200378C07 /* CustomPicker.swift in Sources */,
 				F06A86E22808D44900723465 /* SignInView.swift in Sources */,
+				F011F16D2809896300378C07 /* HomeViewModel.swift in Sources */,
+				F011F17A28098AF500378C07 /* Extensions.swift in Sources */,
 				F052303D27FCD778003F0AC2 /* ContentView.swift in Sources */,
+				F04126EB280B344B004976AE /* TermsAndConditionsView.swift in Sources */,
+				F011F163280986FE00378C07 /* ImageCardView.swift in Sources */,
+				F011F1652809871D00378C07 /* ImagePicker.swift in Sources */,
 				F052303B27FCD778003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003App.swift in Sources */,
+				F011F15028096ECC00378C07 /* SignUpViewModel.swift in Sources */,
+				F011F14E28096E6600378C07 /* SignUpView.swift in Sources */,
+				F011F15F2809869600378C07 /* AdvertisementView.swift in Sources */,
+				F011F1482809651E00378C07 /* SignInModel.swift in Sources */,
+				F011F152280973FE00378C07 /* SignUpModel.swift in Sources */,
+				F011F14C280969CD00378C07 /* ErrorMessageModel.swift in Sources */,
+				F011F1542809767500378C07 /* ForgetPasswordView.swift in Sources */,
+				F011F16B2809891300378C07 /* CustomPickerViewModel.swift in Sources */,
+				F011F16F2809898600378C07 /* SettingViewModel.swift in Sources */,
+				F011F173280989FC00378C07 /* SettingView.swift in Sources */,
+				F011F156280976B600378C07 /* ForgetPasswordViewModel.swift in Sources */,
+				F011F14A2809689200378C07 /* ErrorMessagesView.swift in Sources */,
+				F011F18028098CB300378C07 /* ForgetPasswordModel.swift in Sources */,
+				F011F17E28098B3E00378C07 /* LocationManagerHelper.swift in Sources */,
+				F011F1672809877000378C07 /* AdvertisementViewModel.swift in Sources */,
+				F011F15B280985DA00378C07 /* AdvertisementDetailView.swift in Sources */,
+				F011F17728098A8500378C07 /* PickerImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +466,7 @@
 			files = (
 				F06A86E42808D44900723465 /* SignInView.swift in Sources */,
 				F052305627FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITests.swift in Sources */,
+				F09EC55F280C81A100618BB0 /* SignInViewUITest.swift in Sources */,
 				F052305827FCD77B003F0AC2 /* COLOMBO_BSCCOMP_PT_202_003UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +614,11 @@
 				DEVELOPMENT_TEAM = 56J8QW2T8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "COLOMBO-BSCCOMP-PT-202-003/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please Allow to acces to your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,6 +649,11 @@
 				DEVELOPMENT_TEAM = 56J8QW2T8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "COLOMBO-BSCCOMP-PT-202-003/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow to get your location and show details related to your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please Allow to acces to your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -615,6 +789,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F011F13C280961D600378C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F011F143280962A500378C07 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F011F13D280961D600378C07 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F011F13C280961D600378C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F011F13F280961D600378C07 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F011F13C280961D600378C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F011F141280961D600378C07 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F011F13C280961D600378C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F011F144280962A500378C07 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F011F143280962A500378C07 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F052302F27FCD778003F0AC2 /* Project object */;
 }

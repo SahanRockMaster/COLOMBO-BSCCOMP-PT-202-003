@@ -4,7 +4,7 @@
 //
 //  Created by Sahan Ruwanga on 2022-04-06.
 //
-
+//Last Commit
 import SwiftUI
 struct ContentView: View {
     @AppStorage("current_status") var status = false

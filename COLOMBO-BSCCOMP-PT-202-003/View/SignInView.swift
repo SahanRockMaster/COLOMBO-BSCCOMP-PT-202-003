@@ -4,7 +4,7 @@
 //
 //  Created by Sahan Ruwanga on 2022-04-15.
 //
-
+//Last Commit
 import SwiftUI
 
 
@@ -24,30 +24,30 @@ var body: some View {
                         Image("SignInBG")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3)
+                        .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3).accessibility(identifier: "background_image")
                         
 
                         Text("Sign In into your account")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(Color.black.opacity(0.7))
+                            .foregroundColor(Color.black.opacity(0.7)).accessibility(identifier: "signin_Text")
                         Spacer()
                         TextField("Email", text: self.$signInVM.signing.email)
                             .textInputAutocapitalization(.never)
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .stroke(self.signInVM.signing.email != "" ? Color(.cyan) : Color.cyan.opacity(0.7), lineWidth: 2)
+                                    .stroke(self.signInVM.signing.email != "" ? Color(.cyan) : Color.cyan.opacity(0.7), lineWidth: 2).accessibility(identifier: "Email_TextFeild")
                             )
                             .padding(.top, 25)
                         HStack(spacing: 15) {
                             VStack{
                                 if self.visible{
                                     TextField("Password", text: self.$signInVM.signing.pass)
-                                        .textInputAutocapitalization(.never)
+                                        .textInputAutocapitalization(.never).accessibility(identifier: "Password_TextFeild")
                                 }else {
                                     SecureField("Password", text: self.$signInVM.signing.pass)
-                                        .textInputAutocapitalization(.never)
+                                        .textInputAutocapitalization(.never).accessibility(identifier: "SPassword_TextFeild")
                                 }
                             }
                             
@@ -64,7 +64,7 @@ var body: some View {
                             RoundedRectangle(cornerRadius: 4)
                                 .stroke(self.signInVM.signing.pass != "" ? Color(.cyan) : Color.cyan.opacity(0.7), lineWidth: 2)
                         )
-                        .padding(.top, 25)
+                        .padding(.top, 25).accessibility(identifier: "visibleButton")
                         
 
                         
@@ -78,7 +78,7 @@ var body: some View {
                                     .foregroundColor(Color.cyan)
                             }
                         }
-                        .padding(.trailing,9).padding(.top, 50)
+                        .padding(.trailing,9).padding(.top, 50).accessibility(identifier: "Forgotpassword")
                         
                         VStack{
                             Spacer()
@@ -89,7 +89,7 @@ var body: some View {
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.cyan)
                             }
-                        }.padding(.trailing,166).padding(.top,-42)
+                        }.padding(.trailing,166).padding(.top,-42).accessibility(identifier: "Terms")
 
 //                        NavigationLink("",destination: SignUpModel(email: email), isActive: {
                         Button {
@@ -106,7 +106,7 @@ var body: some View {
                         }
                         .background(Color.cyan)
                         .cornerRadius(10)
-                        .padding(.top, 1)
+                        .padding(.top, 1).accessibility(identifier: "SigninButton")
                         
                    
 //                                Button {
