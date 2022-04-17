@@ -77,8 +77,16 @@ struct HomeView: View {
                     .onChange (of: homeVM.filteredData) { value in
                         if value == "Price Low to High"{
                             self.homeVM.lowToHigh()
-                        } else if value == "Price High to Low"{
+                       }
+                            else if value == "Price High to Low"{
                             self.homeVM.highToLow()
+                       }
+                    }
+                    .onChange (of: homeVM.filteredData) { value in
+                            if value == "Radius Above 50KM"{
+                            self.homeVM.radiusFromLocationBelow()
+                        } else if value == "Radius Below 50KM"{
+                            self.homeVM.radiusFromLocationAbove()
                         }
                     }
                     

@@ -11,7 +11,7 @@ import SwiftUI
 
 class SettingViewModel: ObservableObject {
     @AppStorage("current_status") var status = true
-    @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: false, guestUser: false)
+    @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: true, guestUser: false)
     @Published var userDetails = SignUpModel(nic: "", name: "", dob: Date(), selectedGender: "Male.", mobile: "", email: "", pass: "", repass: "")
     
     let defaults = UserDefaults.standard
@@ -62,6 +62,9 @@ class SettingViewModel: ObservableObject {
     }
     
     func logout(){
+        self.message.isLoading = true
+        //self.message.topic = "Success"
+        self.message.error = "Signned out Successfully"
         self.defaults.removeObject(forKey: "userMobile")
         self.defaults.removeObject(forKey: "userNIC")
         self.defaults.removeObject(forKey: "userName")
@@ -73,6 +76,56 @@ class SettingViewModel: ObservableObject {
         self.status = false
     }
     
+//    func logout(){
+//        self.message.isLoading = true
+//        self.message.alert.toggle()
+//
+////        self.message.isLoading = true
+////        self.message.topic = "Success"
+////        self.message.error = "Signned out Successfully"
+//        self.defaults.removeObject(forKey: "userMobile")
+//        self.defaults.removeObject(forKey: "userNIC")
+//        self.defaults.removeObject(forKey: "userName")
+//        self.defaults.removeObject(forKey: "userDOB")
+//        self.defaults.removeObject(forKey: "userEmail")
+//        self.defaults.removeObject(forKey: "userGender")
+//        self.defaults.removeObject(forKey: "province")
+//        self.message.isLoading = false
+//        self.message.topic = "Success"
+//        self.message.error = "Signned out Successfully"
+//        try! Auth.auth().signOut.(err) in
+//        if err != nil {
+//            self.message.isLoading = false
+//            self.message.error = err!.localizedDescription
+//        }else{
+//
+//        self.message.isLoading = false
+//        self.message.topic = "Success"
+//        self.message.error = "Signned out Successfully"
+//        }
+//        }
+//    }
+    
+//        self.message.isLoading = true
+//        self.message.topic = "Success"
+//        self.message.error = "Signned out Successfully"
+//        self.status = false
+//        self.message.isLoading = false
+//        self.message.topic = "Success"
+//        self.message.error = "Signned out Successfully"
+    
+//    { (err) in
+//        if err != nil {
+//            self.message.isLoading = false
+//            self.message.error = err!.localizedDescription
+//        }else{
+//                    self.message.isLoading = false
+//                    self.message.topic = "Success"
+//                    self.message.error = "Signned out Successfully"
+//        }
+//
+//    }
+
     func saveObjects(){
         self.defaults.removeObject(forKey: "userNIC")
         self.defaults.removeObject(forKey: "userName")
@@ -88,4 +141,5 @@ class SettingViewModel: ObservableObject {
         
     }
 }
+
 

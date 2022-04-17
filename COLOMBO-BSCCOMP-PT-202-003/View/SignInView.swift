@@ -11,6 +11,7 @@ import SwiftUI
 struct SignInView: View{
 @StateObject var signInVM = SignInViewModel()
 @State var visible = false
+    //@State var isActive: Bool = false
 
 var body: some View {
     ZStack{
@@ -90,9 +91,12 @@ var body: some View {
                             }
                         }.padding(.trailing,166).padding(.top,-42)
 
-                        
+//                        NavigationLink("",destination: SignUpModel(email: email), isActive: {
                         Button {
                             signInVM.verify()
+//                            self.isActive.toggle()
+                                //self.selection = 1
+                            
                         } label: {
                             Text("Agree & Sign In")
                                 .fontWeight(.bold)
@@ -103,6 +107,15 @@ var body: some View {
                         .background(Color.cyan)
                         .cornerRadius(10)
                         .padding(.top, 1)
+                        
+                   
+//                                Button {
+//                           // self.advertisementVM.userLatitude = "\(locationManager.userLati)"
+//                            //self.advertisementVM.userLongitude = "\(locationManager.userLong)"
+//                            self.signInVM.validation()
+//                                } label: {
+//                                    Text("Post Ads")
+//                                }
 
                     }
                     .padding(.horizontal, 25)
@@ -118,21 +131,18 @@ var body: some View {
                     .foregroundColor(Color.cyan)
             }
             .padding()
+           })
 
-            
-        })
-        
-                if self.signInVM.message.alert{
+         if self.signInVM.message.alert{
                     GeometryReader{_ in
                         ErrorMessagesView(alert: self.$signInVM.message.alert, error: self.$signInVM.message.error, topic: self.$signInVM.message.topic, loading: self.$signInVM.message.isLoading, guestUser: self.$signInVM.message.guestUser)
 
             }
         }
+    }
+}
 
-    }
-    }
-
-    }
+    
 
  
 
@@ -142,7 +152,6 @@ struct SignInView_Previews: PreviewProvider {
         SignInView()
     }
   }
-                                   
-                            
+}
 
                     

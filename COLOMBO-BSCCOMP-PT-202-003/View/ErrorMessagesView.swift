@@ -55,7 +55,7 @@ struct ErrorMessagesView: View {
                                          NavigationLink {
                                              SignInView()
                                          } label: {
-                                             Text("Login")
+                                             Text("Sign In")
                                                  .foregroundColor(.white)
                                                  .fontWeight(.bold)
                                                  .frame(width: UIScreen.main.bounds.width - 120)

@@ -14,8 +14,10 @@ class HomeViewModel: ObservableObject {
     @Published var advertisementPost: [PostAds] = []
     @Published var search = ""
     @Published var message = ErrorMessageModel(alert: false, error: "", topic: "Error", isLoading: false, guestUser: false)
-    @Published var filterArray = ["Price Low to High", "Price High to Low"]
+    @Published var filterArray = ["Price Low to High", "Price High to Low","Radius Below 50KM", "Radius Above 50KM"]
     @Published var filteredData = "Price"
+   // @Published var filterLocArry = ["Below 50KM", "Above 50KM"]
+    //@Published var FilterLocData = "Radius"
     @Published var showDetails = false
     @Published var selecetdADS : PostAds!
     let province = UserDefaults.standard.string(forKey: "province")
@@ -56,9 +58,14 @@ class HomeViewModel: ObservableObject {
                     self.advertisementPost.sort { (p1,p2) -> Bool in
                         return p1.dateCreated > p2.dateCreated
                     }
+//                    self.advertisementPost.sort { (q1,q2) -> Bool in
+//                        return q1.dateCreated > q2.dateCreated
+//                    }
                     self.filteredAdvertisement = self.advertisementPost.filter{
                         return $0.province.lowercased().contains(self.province?.lowercased() ?? "western province")
                     }
+
+
                 }
             }
         }
@@ -90,9 +97,22 @@ class HomeViewModel: ObservableObject {
 
         }
     }
+    func radiusFromLocationAbove(){
+        withAnimation(.linear){
+            self.filteredAdvertisement.sort { (p1,p2) -> Bool in
+                return p1.price < p2.price + 50000
+            }
+        }
+    }
+    func radiusFromLocationBelow(){
+        withAnimation(.linear){
+            self.filteredAdvertisement.sort { (p1,p2) -> Bool in
+                return p1.price > p2.price + 1000000
+                    }
+        }
+    }
 
 }
-
 
 
 
