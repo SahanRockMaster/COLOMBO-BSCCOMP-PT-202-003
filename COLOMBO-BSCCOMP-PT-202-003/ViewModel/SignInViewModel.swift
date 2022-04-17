@@ -60,7 +60,7 @@ class SignInViewModel: ObservableObject {
                 fetchUser() { userDetails in
                     self.message.isLoading = false
                     self.message.topic = "Success"
-                    self.message.error = "Account Created Successfully.. Please Back to Home"
+                    self.message.error = "Signed In Successfully.. Please Back to Home"
                     self.defaults.setValue(userDetails.mobile, forKey: "userMobile")
                     self.defaults.setValue(userDetails.nic, forKey: "userNIC")
                     self.defaults.setValue(userDetails.name, forKey: "userName")

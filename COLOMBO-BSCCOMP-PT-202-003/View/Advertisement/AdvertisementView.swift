@@ -53,8 +53,8 @@ struct AdvertisementView: View {
                                    } label: {
                                        ZStack{
                                            if self.advertisementVM.singleImage.images.count == 0{
-                                               RoundedRectangle(cornerRadius: 4)
-                                                   .fill(Color.white)
+                                               RoundedRectangle(cornerRadius: 4).stroke(self.advertisementVM.advertisement.price != 0.0 ? Color(.cyan) : Color.black.opacity(0.7), lineWidth: 2)
+                                                  
                                                Image(systemName: "plus")
                                                    .font(.system(size: 24, weight: .bold))
                                                    .foregroundColor(Color(.systemBlue)).opacity(0.7)
@@ -128,8 +128,8 @@ struct AdvertisementView: View {
                                     }
                                 }
                         }
-                        .padding(.top, 10)
-                        //.padding(.top)
+                    
+                        .padding(.top)
 
                         TextField("Price", value: self.$advertisementVM.advertisement.price, formatter: advertisementVM.formatter)
                             .keyboardType(.decimalPad)

@@ -6,18 +6,22 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
-            var body: some View {
-            Text("Hello, world!, Testing")
-                .padding()
+    @AppStorage("current_status") var status = false
+    
+    var body: some View {
+        NavigationView{
+            if status{
+                HomeView()
+            }else{
+                HomeView()
+            }
         }
     }
+}
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
-
-
+}

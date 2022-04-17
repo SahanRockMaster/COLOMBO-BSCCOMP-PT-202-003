@@ -33,7 +33,7 @@ struct SettingView: View {
                         )
                         .padding(.top, 5)
 
-                    TextField ("NIC", text: self.$settingVM.userDetails.name)
+                    TextField ("NIC", text: self.$settingVM.userDetails.nic)
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 4)
@@ -80,16 +80,13 @@ struct SettingView: View {
                                     .padding(.vertical)
                                     .frame(width: UIScreen.main.bounds.width - 50)
                             
-//                            NavigationLink(destination: HomeView(), isActive: 1, selection: $isActive){
-//                                HomeView()
-//                            }
                         
                             .background(Color.cyan)
                             .cornerRadius(10)
                             .padding(.top, 1)
 
                         }
-//                            .padding(.horizontal, 200)
+
                         }
                     }.padding(.horizontal, 25)
                 }
